@@ -37,6 +37,7 @@ RUN \
     git \
     git-fast-import \
     openssh \
+  && pip3 install https://gitlab.com/blacs30/mkdocs-edit-url/-/archive/master/mkdocs-edit-url-master.tar.gz#egg=edit_url \
   && python setup.py install \
   && rm -rf /tmp/*
 
